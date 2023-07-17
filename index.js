@@ -9,6 +9,7 @@ const catRoute= require("./routes/categories");
 const multer= require("multer");
 const path= require("path")
 
+app.use(cors());
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
